@@ -5,21 +5,109 @@
     <title>Form spedizione</title>
 </head>
 <body>
-<form>
-    <label for="name">Nome</label>
-    <input id="name" type="text" name="name" placeholder="Nome">
 
-    <label for="lastname">Cognome</label>
-    <input id="lastname" type="text" name="lastname" placeholder="Cognome">
+<table border="0">
+    <form method="post" action="https://postb.in/1672760844923-8246551849879" id="delivery" autocomplete="on">
 
-</form>
+        <tr>
+            <th align="left">Campo</th>
+            <th align="left">Input</th>
+        </tr>
+
+        <tr>
+            <td><label for="name">Nome</label></td>
+            <td>
+                <input id="name" type="text" name="name" placeholder="Nome" required>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="lastname">Cognome</label></td>
+            <td>
+                <input id="lastname" type="text" name="lastname" placeholder="Cognome" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="address">indirizzo</label></td>
+            <td>
+                <input type="text" name="address" id="address" placeholder="Via tal dei tali" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="po">Civico</label></td>
+            <td>
+                <input type="number" name="po" id="po" placeholder="1">
+            </td>
+        </tr>
 
 
-<div>div</div>
-<div>div</div>
-<div>div</div>
-<div>div</div>
-<div>div</div>
+        <tr>
+            <td><label for="cap">CAP</label></td>
+            <td>
+                <input type="number" name="cap" id="cap" placeholder="0000" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="province">Provincia</label></td>
+            <td>
+                <select name="province" id="province" required>
+                    <option value="MI">Milano</option>
+                    <option value="NA">Napoli</option>
+                    <option value="RO">Roma</option>
+                    <option value="BR">Brescia</option>
+                    <option value="OTHER" selected>Altro</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="city">Città</label></td>
+            <td>
+                <input type="text" name="city" id="city" placeholder="Milano" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="country">Nazione</label></td>
+            <td>
+                <input type="text" name="country" id="country" placeholder="Italia" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="phone">Telefono</label></td>
+            <td>
+                <input type="tel" name="phone" id="phone" placeholder="+3923124453">
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+                <input type="email" name="email" id="email" placeholder="email@mail.com" required>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="note">Note</label></td>
+            <td>
+                <textarea name="note" id="note" cols="30" rows="10" placeholder="note"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Invia">
+            </td>
+        </tr>
+
+
+    </form>
+</table>
+
+<button type="reset" form="delivery">Reset</button>
 
 
 </body>
